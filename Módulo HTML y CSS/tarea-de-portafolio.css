@@ -1,0 +1,157 @@
+ #yo {
+     height: 250px;
+     border-style: solid;
+     border-color: grey;
+ }
+
+ #seccion-superior-gris {
+     background-color: #f6f6f6;
+     min-height: 120px;
+ }
+
+ #fondo-morado {
+    
+     background: radial-gradient(#6F5964, #1D0D11);
+     min-height: 1000px;
+ }
+
+ #frase {
+     float: right;
+ }
+
+ /*#about {
+     position: absolute;
+    top: 180px;
+     right: 50px;
+     width: 300px;
+     height: 100px;
+     min-height: 400px;
+     text-align: justify;
+   
+     float: right;
+     background: linear-gradient(to bottom, grey 0%, grey 0%, rgb(220, 205, 219) 0%, rgb(254, 254, 254) 100%);
+
+ }*/
+ 
+
+
+ #seccion-superior {
+     padding: 50px;
+ }
+
+ h1 {
+     color: black;
+     margin:0px;
+ }
+
+ #nombre {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ #titulo-blanco {
+     color: white;
+ }
+
+ #footer {
+     background-color: #f6f6f6;
+     min-height: 120px;
+     text-align: center;
+     display: inline-block;
+     margin-left: 50%;
+ }
+
+ 
+
+ .Caja{
+     
+     background: linear-gradient(to bottom, grey 0%, grey 0%, rgb(220, 205, 219) 0%, rgb(254, 254, 254) 100%);
+
+     max-width: 350px;
+     margin-left: 50px;
+    
+     border: 50px;
+ }
+
+ .Caja img {
+     max-height: 180px;
+
+ }
+
+ .Caja .logo {
+     max-height: 50px;
+ }
+
+ .Caja button {
+     background-color: #417D61;
+     color: white;
+     border-radius: 5px;
+ }
+
+ .Caja h1,#Caja2 h1 {
+     color: white;
+background:linear-gradient(to bottom, #cccccc 30%, #2d2d2d 100%, rgb(220, 205, 219) 20%, rgb(254, 254, 254) 100%); }
+ 
+ #moda{
+  margin-left: 40%;
+  margin-right:40%;
+  margin-bottom: 10px;
+ }
+
+#log1, #log2{
+ margin-left:8%;
+ margin-right: 8%;
+
+
+}
+
+#footer{
+
+ position:absolute;
+ margin-left: 40%;
+ 
+}
+h4 {
+ 
+ text-align: center;
+}
+
+.footer{
+ width: 20px;
+ display: inline;
+
+}
+
+#foto-mujer,#Caja2{
+ display: inline-block;
+ vertical-align: top;
+}
+
+
+#Caja2{
+ margin-left: 50px;
+ min-height: 300px;
+}
+
+p {
+    margin: 5%;
+    text-align: justify;}
+    
+#next{
+ margin-left: 15px;
+
+}
+
+#img-sup{
+ height: 100%; width: 100%; object-fit: contai
+}
+
+
+.Caja{
+ display: inline-block;
+ width: 30%;
+}
+
+#contenedor {
+ min-width: 500px;
+ 
+}

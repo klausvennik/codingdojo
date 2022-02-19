@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            var respuestaArray = [];
+
+            function cargaInicial() {
+                for (let i = 1; i <= 10; i++) {
+                    $.get("https://pokeapi.co/api/v2/pokemon/" + i + "/", function(respuesta) {
+                        console.dir(respuesta);
+                        respuestaArray.push(respuesta);
+                        ordenarArray();
+                        if (respuestaArray.length == 10) {
+                            pintarArray();
+                        }
+                    }, "json");
+                }
+            }
+
+            function pintarArray() {
+                console.warn('pintando el html');
+                $('#container').html('');
+                $('#container').append('<table><thead><tr><th>ID</th><th>Nombre</th><th>Foto</th></tr></thead>' +
+                    '<tbody id="tableBody"></tbody></table>');
+                for (let i = 0; i < respuestaArray.length; i++) {
+
+                    $('#tableBody').append('<tr><td>' + respuestaArray[i].id + '</td> <td>' +
+                        respuestaArray[i].name + ' </td> <td>' +
+                        '<img src="' + respuestaArray[i].sprites.front_default + '">' +
+                        '</td></tr>');
+                }
+                $('table').css('border', '1px solid black');
+                $('table').css('width', '50%');
+                $('table').css('margin-left', 'auto');
+                $('table').css('margin-right', 'auto');
+                $('td').css('text-align', 'center');
+                $('td').css('vertical-align', 'center');
+            }
+
+            function ordenarArray() {
+                respuestaArray.sort(function(a, b) {
+                    if (a.id > b.id) {
+                        return 1;
+                    } else if (a.id < b.id) {
+                        return -1;
+                    }
+                    // a igual  b
+                    return 0;
+                });
+            }
+            cargaInicial();
+
+            //fin JQuery    
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+
+</body>
+
+</html>

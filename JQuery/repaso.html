@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso:.</title>
+    <!--version de JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        /*va todo el css*/
+        /*etiqueta*/
+        
+        div {
+            color: tomato;
+        }
+        /*clase*/
+        
+        .contenedor {
+            background-color: wheat;
+        }
+        /*id*/
+        
+        #container {
+            font-size: 12px;
+        }
+    </style>
+
+    <!--<script src="repaso.js"></script>-->
+    <script>
+        /*todas las funcionalidades*/
+
+        $(document).ready(function() {
+            //todo los eventos se gatillan con jquery
+            /*etiqueta*/
+            $('p').click(function() {
+                $(this).attr('name');
+                $(this).attr('style', 'color: green'); //style="color: green;"
+
+            });
+
+
+            /*clase*/
+            /*todos los elementos que tenga la clase miparrafo*/
+            $('.miparrafo').click(function() {
+                $(this)
+
+            });
+
+
+            /*id*/
+            /*exclusiva para elemento llamado parrafo1*/
+            $('#parrafo1').click(function() {});
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container" class="contenedor">
+        <p id="parrafo1" class="miparrafo" name="parrafo1"> parrafo</p>
+        <a href="" class="miparrafo"> a href</a>
+        <p id="parrafo2" class="miparrafo2"> parrafo2</p>
+        <img src="" alt="" width="" height="" style="">
+
+        <input type="text" value="">
+        <input type="button" value="">
+        <input type="checkbox" name="" id="" value="">
+        <input type="radio" name="" id="" value="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    </div>
+</body>
+
+</html>

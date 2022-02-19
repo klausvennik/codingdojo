@@ -1,0 +1,54 @@
+<!DOCTYPE >
+
+<html>
+    <head>
+        <title>Mi formulario de registro</title>
+        <meta charset="UTF-8" />
+    </head>
+
+    <body>
+        <h1>Mi Formulario de Registro</h1>
+
+        <form action="" method="POST">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" value="" /><br />
+            <br />
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname" value="" /><br />
+            <br />
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="" /><br />
+            <br />
+            <label for="pwd">Contraseña:</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" /><br />
+            <br />
+            <label for="pwd">Confirmar</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" /><br />
+            <br />
+            <label for="birthday">Cumpleaños:</label>
+            <input type="date" id="birthday" name="birthday" /><br />
+            <br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Hombre</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Mujer</label>
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Otro</label><br />
+            <br />
+            <label for="w3review"> Una breve descripción de ti:</label><br><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50"> </textarea><br />
+            <br />
+            <label for="leng">Lenguaje Favorito</label>
+            <select name="leng" id="leng">
+                <option value="js">JavaScript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="ruby">RUBY</option>
+            </select>
+            <br />
+            <br />
+
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA 3</title>
+</head>
+
+<body>
+    <div>
+        <!-- formulario post: enviar la informacion oculta-->
+        <form method="get">
+            <!-- label-->
+            <label for="nombre">Nombre:</label> &nbsp;&nbsp;
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <input type="text" id="apellido" name="apellido">
+            <label for="apellido">Apellido:</label>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <!-- radio, opciones unicas, mismo name-->
+            <input type="radio" id="masculino" name="sexo">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="sexo">
+            <label for="femenino">Femenino</label>
+            <br>
+            <label for="pnd">Prefiero no Decir</label>
+            <input type="radio" id="pnd" name="sexo">
+            <!-- checkbox, opciones unicas, se puede des seleccionar-->
+            <br>
+            <!-- se agrega la etiqueta value-->
+            <label for="verano">Verano</label>
+            <input type="checkbox" id="verano" name="estaciones" value="verano">
+            <label for="otoño">Otoño</label>
+            <input type="checkbox" id="otoño" name="estaciones" value="otoño">
+            <label for="invierno">Invierno</label>
+            <input type="checkbox" id="invierno" name="estaciones" value="invierno">
+            <label for="primavera">Primavera</label>
+            <input type="checkbox" id="primavera" name="estaciones" value="primavera">
+            <br>
+            <!--Select -->
+            <label for="lenguajes">Lenguajes: </label>
+            <select id="lenguajes" name="lenguajes">
+                <option value="-1">Seleccione su lenguaje...</option>
+                <option value="1">HTML </option>
+                <option value="2">CSS </option>
+                <option value="3">JavaScript </option>
+            </select>
+            <br>
+            <!-- rows tamaño fila; cols tamaño columnas-->
+            <textarea id="descripcion" name="descripcion" cols="4" rows="2"></textarea>
+
+            <br>
+            <!--boton-->
+            <input type="button" value="Enviar">
+            <!-- boton submit, envio del formulario-->
+            <input type="submit" value="Enviar...">
+        </form>
+
+        <br>
+        <!-- Titulos -->
+        <h1> Hola Mundo! </h1>
+        <h2> Hola Mundo! </h2>
+        <h3> Hola Mundo! </h3>
+        <h4> Hola Mundo! </h4>
+        <h5> Hola Mundo! </h5>
+        <h6> Titulo h6 </h6>
+        <!-- salto de linea en la pagina-->
+        <br>
+        <!-- linea horizontal-->
+        <hr>
+        <!--Parrafos-->
+        <p>wuwefdiuyqweg <br>oiwequygfouiweyqgf <br>lkhjvhgwleruhg reiuhfgew ri</p>
+        <!-- pre formato-->
+        <pre>
+thfyghj
+                    erdtfyguhij
+    egfhj
+        </pre>
+        <!-- Ul OL -->
+        <ol>
+            <li>elemento 1</li>
+            <li>sdfghjk</li>
+        </ol>
+        <!-- ul-->
+        <br>
+        <ul>
+            <li>elemento 1</li>
+            <li>sdfghjk</li>
+        </ul>
+        <br>
+        <ul>
+            <li>opcion 1</li>
+            <li>opcion 2</li>
+            <ul>
+                <li>opcion 3</li>
+                <ul>
+                    <li>opcion 4</li>
+                    <ul>
+                        <li>opcion 5</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <!-- tablas-->
+        <table>
+            <!--titulos de la tabla-->
+            <thead>
+                <!-- tr = fila-->
+                <tr>
+                    <!--titulos-->
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Apellido 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--fila-->
+                <tr>
+                    <!--columna-->
+                    <td>1</td>
+                    <td>Israel</td>
+                    <td>Palma</td>
+                    <td>Quezada</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bernardo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>Apellido1</td>
+                    <td>Apellido2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+     header {
+         background-color: #B3B3B3;
+     }
+     
+     #texto {
+         background-color: #CCCCCC;
+     }
+     
+     #amarillo {
+         background-color: #FFFE9B;
+     }
+     
+     
+    @media (min-width: 320px) and (max-width: 480px)  {
+         #PC,
+         #Tablet {
+             display: none;
+         }
+     }
+     
+     @media (min-width: 768px) and (max-width: 1023px){
+          #PC,
+         #CEL {
+             display: none;
+         }
+          
+          
+     }
+     
+     @media (min-width: 1024px) {
+          #CEL,
+         #Tablet {
+             display: none;
+         }
+          
+          
+     }
+     
+     

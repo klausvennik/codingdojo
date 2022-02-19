@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS::</title>
+    <style>
+        /* Formas de dar estilo*/
+        /* por la etiqueta */
+        
+        p {
+            color: darkcyan;
+        }
+        
+        label {
+            color: rebeccapurple;
+            font-size: 24px;
+        }
+        
+        div {
+            background: #ffffff url("imagenes/fondo.jpeg") no-repeat fixed center;
+            background-color: rgb(59, 151, 82);
+            /*background-image: url("imagenes/fondo.jpeg");*/
+            background-image: linear-gradient(to bottom right, red, yellow);
+            background-position: top;
+            opacity: 0.3;
+        }
+        /* por clase*/
+        /*una o mas etiquetas*/
+        
+        .colores {
+            color: greenyellow;
+        }
+        
+        .imagenes {
+            width: 150px;
+            height: auto;
+        }
+        /*por el id*/
+        /*un unico elemento*/
+        
+        #parrafo3 {
+            color: chocolate;
+        }
+        
+        #parrafo4 {
+            color: #00bff4;
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        table,
+        th {
+            border: 4px solid #00bff4;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- -->
+        <p>Esto es un parrafo 1</p>
+        <p class="colores">Esto es un parrafo 2</p>
+        <p id="parrafo3">Esto es un parrafo 3</p>
+        <p id="parrafo4" class="colores">parrafo 4</p>
+        <label for="" class="colores">esto es un label</label>
+        <img src="imagenes/css.jpeg" alt="css" class="imagenes">
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dato 1</td>
+                    <td>dato 2</td>
+                    <td>dato 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="process.php" method="post">
+            <p>Por favor regístrese</p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <p>Selecciona tu género:</p>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+
+            <label for="femenino">Female</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+
+            <label for="decline">Prefiero no decir</label>
+            <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+
+            <p>Selecciona 3 de tus colores favoritos:</p>
+            <label for="azul">Azul</label>
+            <input type="checkbox" id="azul" name="color" value="azul">
+
+            <label for="verde">Verde</label>
+            <input type="checkbox" id="verde" name="color" value="verde">
+
+            <label for="rojo">Rojo</label>
+            <input type="checkbox" id="rojo" name="color" value="rojo">
+
+            <label for="negro">Negro</label>
+            <input type="checkbox" id="negro" name="color" value="negro">
+
+            <label for="morado">Morado</label>
+            <input type="checkbox" id="morado" name="color" value="morado">
+
+            <p>Escribe unas palabras sobre ti mismo:</p>
+            <textarea name="descripcion"></textarea>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <label for="pw_confirm">Confirmación de Contraseña:</label>
+            <input type="password" id="pw_confirm" name="password_confirmacion">
+
+            <input type="submit" value="Presiona aquí para registrarte">
+        </form>
+
+    </div>
+</body>
+
+</html>

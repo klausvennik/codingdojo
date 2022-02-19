@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Desapareciendo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            for (let i = 1; i <= 4; i++) {
+                $('#container').append('<img src=tux_ninja' + i + '.png  data-alt-src=gato' + i + '.png >');
+                /*$('#container').append('<img id=ninja' + i + '>');
+                $('img').attr('src', 'tux_ninja' + i + '.png');*/
+            }
+            //$('img').attr('width', '200px');
+            $('img').addClass('ninja');
+
+            //agregar boton en container
+            $('#container').append('<br><button id=restaurar>Restaurar</button>');
+
+            //desaparece la imagen
+            $('img').click(function() {
+                //$(this).hide(3000);
+                //alert($(this).attr('data-alt-src'));
+                var temp = $(this).attr('src');
+                $(this).attr('src', $(this).attr('data-alt-src'));
+                $(this).attr('data-alt-src', temp);
+            });
+
+            //restaurar imagenes 
+            $('button').click(function() {
+                $('img').show(3000);
+            });
+
+            //fin JQuery    
+        });
+    </script>
+    <style>
+        .ninja {
+            border: 1px solid black;
+            width: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <img src="tux_ninja1.png" data-alt-src='tux_ninja2.png' temp="tux_ninja1.png">
+    </div>
+</body>
+
+</html>

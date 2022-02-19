@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos::</title>
+    <script>
+        /* ejercicios 1*/
+        function a() {
+            console.log('hello');
+        }
+        console.log('Dojo');
+        //respt.:'Dojo'
+        /* ejercicio 2*/
+        function a() {
+            console.log('hello');
+            alert("hola clase");
+            return "hello";
+            //return 15;
+        }
+        a();
+        x = a(); //x = 15;//x = undefined//x = "hello"
+        console.log('x is', x);
+
+        //respt.: 'hello',
+
+        /*ejercicio 3*/
+        function a(n) { //n = 3
+            console.log('n is', n);
+            return n;
+            return n + 15; //return 3 + 15; //return 18;
+        }
+        x = a(3); // x = 18;
+        console.log('x is', x);
+
+        //resp:'n is' 3,'x is' 18
+
+        /*ejercicio 4*/
+
+        function a(n) { //n = 5
+            console.log('n is', n);
+            y = n * 2; // y = 5 * 2; y = 10 ;
+            return y; //return 10;
+        }
+
+        x = a(3) + a(5); //x = 6 + 10// x = 16
+        console.log('x is', x);
+        //respt.:'n is' 3,'n is' 5, 'x is' 16
+
+        /* ejercicio 5*/
+        function op(a, b) { //a=3; b= 5
+            c = a + b; // c = 3 + 5  ; c= 8
+            console.log('c is', c);
+            return c; //return 8
+        }
+        x = op(2, 3) + op(3, 5); //x = 5 + 8;// x = 13
+        console.log('x is', x);
+        //respt.:'c is' 5,'c is' 8, 'x is' 13
+
+        /*ejercicio 6*/
+        function op(a, b) { //a=3; b =5;
+            c = a + b; //c =3 + 5 ; c= 8
+            console.log('c is', c);
+            return c; //return 8
+        }
+        x = op(2, 3) + op(3, op(2, 1)) + op(op(2, 1), op(2, 3));
+        //x = 5 + 6 + 8; x = 19
+        console.log('x is', x)
+            //respt.:'c is' 5, 'c is' 3,'c is'6, 'c is' 3,'c is' 5,'c is' 8,'x is' 19
+
+        /*ejercicio 7*/
+        var x = 15;
+
+        function a() {
+            var xrwetywu = 10;
+            return xrwetywu; //return 10;
+        }
+
+        console.log(x);
+        x = a(); //x = 10
+        console.log(x);
+
+        //respt.:15, 15
+        /* ejercicio 8*/
+        function multiply(x, y) {
+            console.log(x);
+            console.log(y);
+        }
+        if (multiply(2, 3) != undefined) {
+            b = multiply(2, 3); //b = undefined
+            console.log(b);
+        } else {
+            alert("Capa 8");
+        }
+        //respt.: 2,3,undefined
+
+        //ejercicio 9
+        function multiply(x, y) { //x = 2; y = 3
+            return x * y; //return 2 * 3; return 6
+        }
+        b = multiply(2, 3); //b = 6;
+        console.log(b);
+        console.log(multiply(5, 2)); //console.log(10);
+        //respt.: 6,10
+
+        //ejercicio 10
+        var x = [1, 2, 3, 4, 5, 10];
+        //x.length = 6; x[0]; x[x.length-1]=10;
+
+        for (var i = 0; i < 5; i++) { //i=0>3>4>7>8
+            i = i + 3; //i = 4+3
+            console.log(i);
+        }
+        //respt.:3,7
+
+        //ejercicio 11
+        var x = 15; //declaracion de variable
+        console.log(x); //impresion contenido de la variable x
+
+        function awesome() {
+            let x = 10; //nueva declaracion de variable
+            console.log(x);
+        }
+
+        console.log(x);
+        awesome();
+        console.log(x);
+        //respt.:15,15,10,15
+
+        //ejercicio 12
+        //i+= 2 => i = i + 2;
+        //i++ => i = i + 1
+        for (var i = 0; i < 15; i++) { //i=0>2>4>6>8>10>12>14>16
+            console.log(i);
+        }
+        //respt.:0,2,4,6,8,10,12,14
+
+        var i = 0;
+        while (i < 15) {
+            console.log(i);
+            i += 2;
+        }
+
+        //ejercicio 13
+
+        for (var i = 0; i < 3; i++) { //i=0>1>2>3
+
+            for (var j = 0; j < 2; j++) { //j=0>1>2
+                console.log(i * j); //console.log(2*1)
+            }
+
+        }
+        //resp.:0,0,0,1,0,2
+
+        //ejercicio 14
+        function looping(x, y) { //x= 3;y= 3
+            for (var i = 0; i < 3; i++) { //i=0>1>2>3
+
+                for (var j = 0; j < 3; j++) { //j=0>1>2>3
+
+                    console.log(i * j); //console.log(2*2)
+                }
+
+            }
+        }
+        z = looping(3, 3); //z = undefined
+        console.log(z);
+        //respt.:0,0,0,0,1,2,0,2,4,undefined
+
+        //ejercicio 15
+        function looping(x, y) { //x = 3;y = 5
+            for (var i = 0; i < x; i++) { //i=0>1>2>3
+
+                for (var j = 0; j < 5; j++) { //j=0>1>2>3>4>5
+                    console.log(i * j); //console.log(1*?)
+                }
+
+            }
+            return x * y; //return 3*5;return 15;
+        }
+        z = looping(3, 5); //z =15
+        console.log(z);
+        //respt.:0,0,0,0,0,0,1,2,3,4,0,2,4,6,8,15
+
+        //ejercicio 16
+        function printUpTo(x) {
+            if (x < 0) { //validar si es negativo
+                console.log("Número negativo");
+                return false;
+            }
+            for (let i = 1; i <= x; i++) {
+                console.log(i); //
+            }
+        }
+        printUpTo(1000); // debería imprimir todos los enteros de 1 to 1000
+        y = printUpTo(-10); // debería imprimir false
+        console.log(y); // debería imprimir false
+
+        //ejercicio 18
+        function printSum(x) {
+            var sum = 0;
+            //variable = variable + algo
+            for (let i = 0; i <= x; i++) {
+                console.log(i);
+                sum = sum + i;
+                console.log("suma parcial: " + sum);
+            }
+
+            return sum; //32640
+        }
+        y = printSum(255) // debería imprimir todos los enteros de 0 a 255 y que cada entero imprima la suma parcial.
+        console.log(y) // // debería imprimir 32640
+
+        //ejercicio 19
+        function printSumArray(x) { //x[1, 2, 3]
+            var sum = 0; //sum = 6;
+            for (var i = 0; i < x.length; i++) { //i=0>1>2>3
+                sum = sum + x[i]; //sum = 3 + x[2];//sum = 3 + 3;
+            }
+            return sum;
+        }
+        console.log(printSumArray([1, 2, 3])); // debería imprimir 6
+
+        var unoString = "1";
+        var unoNumero = 1;
+        var unoPalabra = "uno";
+
+        suma = suma + unoNumero;
+
+        /*Crea una función que entregue el elemento más grande 
+        (largest element) en un array. 
+        Por ejemplo largestElement([1,30,5,7]) 
+        debiera dar como resultado 30.*/
+        function largestElement(array) {
+            var numeroMayor = array[0]; //30
+            for (var i = 0; i < array.length; i++) { //i=4
+                //30<7
+                if (numeroMayor < array[i]) {
+                    numeroMayor = array[i];
+                }
+            }
+            return numeroMayor; //30
+        }
+        console.log(largestElement([1, 30, 5, 7]));
+        /**/
+        function llamadoAFuncion() {
+            var edad = document.getElementById("edad").value;
+
+            if ((edad / 1) > 0) {
+                console.log(edad)
+            } else {
+                var respuesta = confirm("Avispate, dice edad, entendiste!!");
+                if (respuesta) {
+                    alert("Excelente!!");
+                } else {
+                    alert("lee bien plis!!");
+                }
+
+                document.getElementById("edad").value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="edad">Edad: </label>
+    <input type="text" id="edad">
+    <input type="button" value="Validar" onclick="llamadoAFuncion()">
+</body>
+
+</html>

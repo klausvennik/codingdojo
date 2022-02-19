@@ -1,0 +1,104 @@
+#header {
+    background-color: #F6F6F6;
+    width: 970px;
+    font-family: sans-serif;
+}
+
+#header h1,#header  p{
+    display: inline-block;
+}
+
+#header p{
+    margin-left: 400px;
+    
+}
+
+#yo {
+    width: 400px;
+    display: inline-block ;
+    vertical-align:top;
+    margin-right:15px;
+    border-style: solid;
+    border-color: grey;
+    
+}
+
+#about {
+    display:inline-block;
+    width:500px;
+    margin-left: 15px;
+    background: linear-gradient(to right, #FEFDFE 0%, #DBCDDA 100%);
+    height: 430px;
+
+}
+
+#fondo {
+    background: radial-gradient(#6F5964, #1D0D11);
+    width: 970px;
+    height: 1200px;
+
+}
+
+h2{
+    background-image: linear-gradient(#AFAFB3, #878593, #AFAFB3);
+    margin-top: 0px;
+    padding:3px;
+}
+
+#mode,#family,#five {
+    width: 280px;
+    display: inline-block;
+    vertical-align: top;
+    background: linear-gradient(to right, #FEFDFE 0%, #DBCDDA 100%);
+
+}
+.foto-caja{
+    width: 280px;
+}
+.logo-caja{
+    width: 40px;
+    margin-left: 8px;
+}
+
+.logo-footer{
+    width: 25px;
+}
+
+#cajas {
+    margin: 30px;
+}
+
+#family {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #417D61;
+    color:white;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+
+#correo {
+
+margin-left: 310px;
+}
+
+#imagen-texto{
+    padding:15px;
+}
+
+#about p,#family p,#five p,#mode p,#continue {
+    padding: 10px;
+    text-align: justify;
+}
+
+
+table {
+    margin-left: 250px;
+  
+}
+

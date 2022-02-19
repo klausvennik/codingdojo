@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+
+            //obtener respuesta desde una url en formato JSON
+            $.get("https://pokeapi.co/api/v2/pokemon/1/", function(respuesta) {
+                console.dir(respuesta); //respuesta es un objeto
+                console.log(respuesta.id);
+                console.log(respuesta.name);
+                console.log(respuesta.sprites.front_default);
+
+                //$('#container').append('<p> el texto</p>');
+                $('#container').append('<p>El id es: ' + respuesta.id + '</p>');
+                $('#container').append('<p>El nombre es: ' + respuesta.name + '</p>');
+                $('#container').append('<img src="' + respuesta.sprites.front_default + '" alt="">');
+            }, "json");
+
+
+
+        });
+
+        /* var objeto = {
+            key: palabra,
+            key2: palabra2,
+            "key3": "palabra2",
+            "key4": [1,3,5,7],
+            "key5": {
+                    keyinterno: "palabra4"
+                    }
+        }*/
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+
+    </div>
+</body>
+
+</html>

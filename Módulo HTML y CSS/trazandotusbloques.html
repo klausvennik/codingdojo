@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Position Practice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 25px;
+        }
+        
+        #wrapper {
+            width: 950px;
+            background-color: silver;
+            min-height: 620px;
+        }
+        
+        #header {
+            min-height: 160px;
+            background-color: green;
+            margin: 0px auto;
+        }
+        
+        #navigation {
+            min-height: 300px;
+            width: 200px;
+            margin-top: 20px;
+            background-color: blue;
+        }
+        
+        #main_content {
+            margin-top: 20px;
+            margin-left: 20px;
+            min-height: 300px;
+            width: 620px;
+            background-color: red;
+        }
+        
+        #subcontents {
+            min-height: 100px;
+            width: 130px;
+            margin: 10px;
+            background-color: yellow;
+        }
+        
+        #subcontents1 {
+            min-height: 100px;
+            width: 130px;
+            margin: 10px;
+            background-color: yellow;
+        }
+        
+        #subcontents2 {
+            min-height: 100px;
+            width: 130px;
+            margin: 10px;
+            background-color: yellow;
+        }
+        
+        #advertisement {
+            min-height: 80px;
+            width: 550px;
+            margin-top: 50px;
+            background-color: purple;
+        }
+        
+        #subcontents,
+        #subcontents1,
+        #subcontents2,
+        #main_content {
+            /*  float: right; */
+            display: inline-block;
+        }
+        
+        #navigation {
+            
+            /*
+            float: left;*/
+            display:inline-block;
+            vertical-align:top;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="navigation"></div>
+        <div id="main_content">
+
+            <div id="subcontents"></div>
+            <div id="subcontents1"></div>
+            <div id="subcontents2"></div>
+            <div id="advertisement"></div>
+        </div>
+    </div>
+    <!-- end of wrapper -->
+</body>
+
+</html>

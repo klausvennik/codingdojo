@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#container {
+  background-color: beige;
+  width: 800px;
+  height: auto;
+  padding: 15px;
+}
+#div1 {
+  background-color: aqua;
+  width: 90%;
+  height: 200px;
+}
+#div2 {
+  background-color: #43993b;
+  width: 90%;
+  height: 200px;
+}
+#div3 {
+  background-color: #302a83;
+  width: 90%;
+  height: 200px;
+}

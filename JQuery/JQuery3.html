@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES::</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $('document').ready(function() {
+            //$('').accion(function(){});
+            $('#boton1').click(function() {
+                console.log("Función click");
+                alert("Función click");
+            });
+            //hide
+            $('#boton2').click(function() {
+                $('#parrafo2').hide();
+            });
+            $('#parrafo2').click(function() {
+                $('#parrafo2').hide();
+            });
+            //show
+            $('#boton3').click(function() {
+                $('#parrafo2').show();
+            });
+            //toggle
+            $('#boton4').click(function() {
+                $('#parrafo2').toggle();
+            });
+
+            //addclass
+            $('#parrafo3').click(function() {
+                $('#parrafo3').addClass('colores fondo pb-2');
+            });
+
+            //append
+            $('#parrafo4').click(function() {
+                $('#parrafo4').append('<br> esto es texto adicional <a href=#>link dinamico</a>');
+            });
+
+            //HTML: sobre escribe lo interno al elemento
+            $('#parrafo5').click(function() {
+                $('#parrafo5').html('<img src=tux.png>');
+                $('img').attr('width', '200');
+                $('img').attr('alt', 'tux');
+            });
+            //ATTR
+            $('#boton5').click(function() {
+                var respuesta = $('#boton5').attr('value');
+                var wimagen = $('img').attr('width');
+                alert(respuesta + ' ' + wimagen);
+                //alert(wimagen);
+                alert($('#boton5').val());
+            });
+
+            //val
+            $('#boton6').click(function() {
+                //.val() retorna un string, con el contenido del input
+                var valText1 = $('#text1').val();
+                var valText2 = $('#text2').val();
+                //parseInt() o parseFloat() o Number()
+                //isNaN(valText1); // validar si es numero
+
+                if (isNaN(valText1) || isNaN(valText2)) {
+                    //alert("No es un numero");
+                    $('#boton6').after('<p id=alerta>No es un número </p>');
+                    $('#alerta').addClass('alertaMsg');
+                    $('#text1').addClass('alertaMsg');
+                    $('#text2').addClass('fondo');
+                } else {
+                    if (Number(valText2) == 0) {
+                        $('#boton6').after('<p id=alerta>No se puede dividir por cero </p>');
+                        $('#alerta').addClass('alertaMsg');
+                    } else {
+                        alert(parseFloat(valText1) / Number(valText2));
+                    }
+                }
+            });
+
+            //fin JQuery    
+        });
+    </script>
+    <style>
+        .alertaMsg {
+            color: red;
+        }
+        
+        .colores {
+            color: brown;
+        }
+        
+        .fondo {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>FUNCIÓN CLICK</h1>
+        <p>Clickea el botón para ejeutar el evento click</p>
+        <button id="boton1">Funcion click</button>
+        <hr>
+        <h1>FUNCIÓN HIDE, SHOW y TOGGLE</h1>
+        <p id="parrafo2">Clickea el botón para ejeutar el evento hide</p>
+        <button id="boton2">Funcion hide</button>
+        <button id="boton3">Funcion show</button>
+        <button id="boton4">Funcion toggle</button>
+        <hr>
+        <h1>ADDCLASS</h1>
+        <p id="parrafo3">esto es el parrafo 3</p>
+        <hr>
+        <h1>APPEND y HTML</h1>
+        <p id="parrafo4">esto es el parrafo 4 </p>
+        <p id="parrafo5"><br> soy elparrafo 5 <a href=#>link dinamico</a> </p>
+        <hr>
+        <h1>ATTR</h1>
+        <input id="boton5" type="button" value="opcion1">
+        <hr>
+        <h1>VAL</h1>
+        <input type="text" name="text1" id="text1">
+        <br>
+        <input type="text" name="text2" id="text2">
+        <button id="boton6">valores de los input</button>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Blog de Klaus</h1>
+    <img src="data:image/jpeg;base64,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" alt="Trulli" width="500" height="333"><br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas, quam ac egestas feugiat, neque sapien facilisis urna, a congue ante dui luctus elit. Fusce in faucibus diam. Curabitur vel rutrum risus, eget sollicitudin ex. Curabitur neque
+        ante, laoreet a mi eget, finibus blandit nisi. Cras a ante tellus. Etiam sit amet elementum dolor. Nulla eu sem vitae magna rhoncus tincidunt at ac orci. Nulla congue augue quis est sodales laoreet. Sed nec dignissim orci, condimentum ultricies
+        eros. Vivamus id orci ornare, mattis nisi eu, dignissim libero. Nullam sagittis erat at eleifend pellentesque. Suspendisse gravida, ante vitae posuere ullamcorper, ligula tellus ultricies libero, elementum pharetra nisl ligula sed dui. Donec eu
+        turpis ligula. Sed faucibus velit at cursus congue. Ut sit amet purus eget libero porttitor convallis quis quis nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+
+    <table>
+        <tr>
+            <th>Año</th>
+            <th>Estatura en Diciembre</th>
+            <th>Control Médico</th>
+        </tr>
+        <tr>
+            <td>1990</td>
+            <td>57 cm</td>
+            <td>Si</td>
+        </tr>
+        <tr>
+            <td>1991</td>
+            <td>64 cm</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>1992</td>
+            <td>71 cm</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>1992</td>
+            <td>80 cm</td>
+            <td>Sí</td>
+        </tr>
+        <tr>
+            <td>1995</td>
+            <td>87 cm</td>
+            <td>Sí</td>
+        </tr>
+    </table>
+
+    <h1>Deportes</h1>
+    <ul>
+        <li>2004 - 2008 Voleibol</li>
+        <li>2008-2010 Futbol</li>
+        <li>2010-2021 Caminata</li>
+    </ul>
+    <a href="https://www.youtube.com/watch?v=osRRK_dealY">Haz click para ver video de la Universidad donde estudió Klaus</a>
+
+    <h1>Por favor, contesta esta breve encuesta </h1>
+
+​        <form action="" method="POST">
+        <label for="fname">Email</label>
+        <input type="text" id="fname" name="fname" value=""><br><br>
+
+        <input type="radio" id="si" name="si" value="si">
+        <label for="si">Sí por favor envíame correos</label><br>
+        <input type="radio" id="no" name="no" value="no">
+        <label for="no">No, no quiero correos</label><br>
+        <p>¿Cómo supiste de Klaus?</p><br>
+        <input type="checkbox" id="fb" name="fb" value="fb">
+        <label for="fb">Facebook</label><br>
+        <input type="checkbox" id="peri" name="peri" value="peri">
+        <label for="peri">El periódico</label><br>
+        <input type="checkbox" id="cont" name="cont" value="cont">
+        <label for="cont">Un contacto</label><br><br>
+
+
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos 3</title>
+    <script>
+        //Math.floor((Math.random() * 200))+ 100; 
+
+
+        /*ejercicio 1*/
+        function a(x, y) { //x= 5,y=5
+            return 5;
+        }
+        console.log(a(5, 5)); //console.log(5);
+        //respt.: 5
+
+        /*ejercicio 2*/
+        var zz
+
+        function a(x, y) { //x=6; y=8;
+            let z = [6, 8, 5]; //z.length = 0; tamaño o cantidad de elementos dentro del arreglo
+            z.push(x); //z.push(6);agrega al final del arreglo
+            z.push(y); //z.push(8);agrega al final del arreglo
+            z.push(5); //agrega al final del arreglo
+            console.log(z); //console.log([6,8,5]);
+            return z; //return [6,8,5];
+        }
+
+        var b = a(2, 2); //b = [2,2,5];
+        console.log(b);
+
+        console.log(a(6, 8)); //console.log([6,8,5]);
+
+        //respt.:[2,2,5],[2,2,5],[6,8,5],[6,8,5]
+
+        /*ejercicio 2.1*/
+
+        function alumnoAlAzar(arreglo) {
+            //ultimo= arreglo[arreglo.length-1]
+
+            var posicion = Math.floor(Math.random() * arreglo.length); //0-(arreglo.length-1) //31//0 - (31-1)
+            var apellido = arreglo[posicion];
+
+            console.log("*** La o El elegido es: " + apellido);
+        }
+
+        var alumnos = ["Inzunza", "Vennik", "Salazar", "Hoyuela", "LDG", "Herrera",
+            "Morales", "Lopez", "Fuentes", "Palma", "Saldivia", "Toledo", "Reyes", "Gomez", "Ojeda",
+            "Troncoso", "Fabres", "Cayupi", "Henriquez"
+        ];
+
+        alumnoAlAzar(alumnos);
+
+        /*ejercicio 3*/
+        function a(x) { //x=2;
+            z = [2, 2];
+            z.push(x);
+            z.pop();
+            z.push(x);
+            z.push(x);
+            return z; //return [2,2];
+        }
+        y = a(2); //y = [2,2]
+        y.push(5); //y = [2,2,5]
+        console.log(y);
+        //respt.:[2,2,5]
+
+        /*ejercicio 4*/
+        function a(x) { //x = [2, 3, 4, 5]
+            //x[0]=2; x[1]=3
+            if (x[0] < x[1]) { //2<3
+                return true;
+            } else {
+                return false;
+            }
+        }
+        b = a([2, 3, 4, 5]); //b = true;
+        console.log(b);
+        //respt.: true
+        /*ejercicio 5*/
+        function a(x) { //x = ["Coding","Coding","Coding","Coding"];x.length=4
+
+            for (var i = 0; i < x.length; i++) { //i=4
+                if (x[i] > 0) { //
+                    x[i] = "Coding";
+                }    
+            }    
+            return x; //["Coding","Coding","Coding","Coding"]
+        }
+        console.log(a([1, 2, 3, 4])); //console.log(["Coding","Coding","Coding","Coding"])
+        //resp.:["Coding","Coding","Coding","Coding"];
+
+        /*ejercicio 6*/
+        function a(x) { //x = [5,"Coding", "Dojo", 4];x.length=4
+            for (var i = 0; i < x.length; i++) { //i=4
+
+                if (x[i] > 5) { //x[3]= 4 > 5
+                    x[i] = "Coding";
+                } else if (x[i] < 0) { // 4 < 0
+                    x[i] = "Dojo";
+                }    
+            }    
+            return x; //return [5,"Coding", "Dojo", 4];
+        }
+        console.log(a([5, 7, -1, 4])); //console.log([5,"Coding", "Dojo", 4])
+        //respt.:[5,"Coding", "Dojo", 4];
+        /*ejercicio 7*/
+        function a(x) { //x = [5,10]
+            if (x[0] > x[1]) { //5>10
+                return x[1];
+            }
+            return 10;
+        }
+        b = a([5, 10]); //b = 10;
+        console.log(b);
+        //respt.:10
+
+        /*ejercicio 8*/
+        function sum(x) {
+            sum = 0;
+            for (var i = 0; i < x.length; i++) {
+                sum = sum + x[i];
+                console.log(sum);
+            }
+            return sum;
+        }
+        //rept.:
+
+        /*ejercicio 9*/
+        //obtener el promedio de los numeros en el arreglo
+        function printAverage(x) { //x = [1, 2, 3]
+            sum = 0; //6
+            for (let i = 0; i < x.length; i++) { //i=3
+                sum = sum + x[i];
+            }
+            /*var promedio = sum /x.length;
+            return promedio;*/
+            return sum / x.length;
+        }
+        /* 
+        function printAverage2(x) {//[2, 5, 8]
+            sum=0;//7.5
+            for(let i =0; i<x.length;i++){
+                sum = sum + (x[i]/2);
+            }
+
+            return sum;
+        }*/
+
+        y = printAverage([1, 2, 3]); //y= 2
+        console.log(y); // should log 2
+
+        y = printAverage([2, 5, 8]); //y = 5
+        console.log(y); // should log 5
+
+        /*ejercicio 10*/
+        /*Crea un array con todos los enteros impares (odd integers)
+        entre 1 y 255 (inclusive)*/
+        function returnOddArray() {
+            var array = [];
+            for (let i = 1; i <= 255; i += 2) {
+                array.push(i);
+            }
+            return array;
+        }
+        y = returnOddArray();
+        console.log(y); // should log [1,3,5,...,253,255]
+        //resp.:
+
+        /*ejercicio 11*/
+        /*eleva cada elemento del array dado al cuadrado 
+        y retorna el mismo arreglo*/
+        function squareValue(x) { //x= [2, 5, 8];
+
+            for (let i = 0; i < x.length; i++) { //i=3
+                x[i] = x[i] * x[i]; //
+                //x[i] = Math.pow(x[i],10)
+            }
+
+            return x; //return [4,25,64];
+        }
+
+        y = squareValue([1, 2, 3]);
+        console.log(y); // should log [1,4,9]
+
+        y = squareValue([2, 5, 8]);
+        console.log(y); // should log [4,25,64]
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

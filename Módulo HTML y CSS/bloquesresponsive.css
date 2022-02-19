@@ -1,0 +1,117 @@
+   
+        * {
+            margin: 0px;
+            padding: 25px;
+        }
+        
+        #wrapper {
+            width: 100%;
+            background-color: silver;
+            min-height: 620px;
+        }
+        
+        #header {
+            min-height: 160px;
+         width: 90%;
+            background-color: green;
+            margin: 0px auto;
+        }
+        
+        
+        #main_content {
+            margin-top: 20px;
+         
+    margin-left: 20px;
+            min-height: 300px;
+            width:90%;
+            background-color: red;
+        }
+        
+        
+    .c {
+
+    background-color: yellow;
+ 
+  }    
+        #advertisement {
+            min-height: 80px;
+            width: 90%;
+            margin-top: 50px;
+            background-color: purple;
+        }
+        
+    
+      @media only screen and (min-width: 480px) and (max-width: 1023px){
+          #subcontents, #subcontents1{
+
+    display: inline-block;
+    
+             
+         }
+         
+         #advertisement,#main_content,#header{
+             
+             width:90%;
+         }
+           
+    .c {
+
+    width: 70px;
+   height: 53px;
+   margin:1%;
+    }
+   
+   
+    #navigation { 
+             display: none;
+         }
+  
+  
+     }
+   
+   
+ @media only screen and (min-width: 1024px) {
+         
+        #subcontents,
+        #subcontents1,
+        #subcontents2,
+        #main_content,#navigation {
+           
+            display: inline-block;
+            vertical-align:top;
+        } 
+         
+         #main_content{
+             width: 65%; 
+         }
+         
+         
+          #navigation {
+             width: 20%;
+         }
+         
+         #header {
+             width: 90%;
+         }
+         
+        .c {
+
+    width: 200px;
+   height: 150px;
+  }
+
+        #navigation {
+            min-height: 300px;
+            width: 22%;
+            margin-top: 20px;
+            background-color: blue;
+        }
+         
+         }
+          
+
+  
+  #main_content
+ {
+     width: 65%;
+ }

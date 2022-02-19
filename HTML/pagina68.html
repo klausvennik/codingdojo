@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Silla" content="Sillas Gamer">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>PAGINA 1</title>
+    <style>
+        table {
+            border: 1px solid red
+        }
+    </style>
+    <script>
+        document.getElementById("name");
+    </script>
+</head>
+
+<body>
+    <div>
+        <!--action ruta de envio ;get envia por url ; post envia datos ocultos-->
+        <form action="" method="POST">
+            <label for="name"> Nombre:</label>&nbsp;&nbsp;
+            <!-- el id es identificador unico para los elementos-->
+            <input type="text" id="name" name="name">
+            <br>
+
+            <input type="text" id="last_name" name="last_name">
+            <label for="last_name">Apellido:</label>&nbsp;
+            <br>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <label for="fechatime">Fecha:</label>
+            <input type="datetime-local" id="fechatime" name="fechatime">
+            <br>
+            <!--radio-->
+            <label for="masc">Masculino</label>
+            <input type="radio" id="masc" name="sexo" value="1">
+            <label for="fem">Femenino</label>
+            <input type="radio" id="fem" name="sexo" value="2">
+            <br>
+            <!--checkbox -->
+
+            <input type="checkbox" id="verano" name="estacion" value="verano">
+            <label for="verano">Verano</label>
+            <input type="checkbox" id="otoño" name="estacion" value="otoño">
+            <label for="otoño">Otoño</label>
+            <input type="checkbox" id="invierno" name="estacion" value="invierno">
+            <label for="invierno">Invierno</label>
+            <input type="checkbox" id="primavera" name="estacion" value="primavera">
+            <label for="primavera">Primavera</label>
+            <br>
+            <!--text area, define cols y rows-->
+            <label for="desc">Descripcion:</label><br>
+            <textarea id="desc" name="descripcion" rows="4" cols="20">
+            </textarea>
+            <br>
+            <!--select-->
+            <label for="lenguajes">Lenguajes:</label>
+            <select id="lenguajes" name="lenguajes">
+                <option value="-1">Seleccione lenguaje...</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JavaScript</option>
+            </select>
+            <input type="button" value="Enviar...">
+            <input type="submit" value="Enviar...">
+
+        </form>
+        <br>
+
+        <!-- Titulos -->
+        <h1> Hola Mundo! </h1>
+        <h2> Hola Mundo! </h2>
+        <h3> Hola Mundo! </h3>
+        <h4> Hola Mundo! </h4>
+        <h5> Hola Mundo! </h5>
+        <h6> Titulo h6 </h6>
+        <!-- salto de linea en la pagina-->
+        <br>
+        <!-- linea horizontal-->
+        <hr>
+        <!--Parrafos-->
+        <p>wuwefdiuyqweg <br>oiwequygfouiweyqgf <br>lkhjvhgwleruhg reiuhfgew ri</p>
+        <!-- pre formato-->
+        <pre>
+thfyghj
+                    erdtfyguhij
+    egfhj
+        </pre>
+        <br>
+        <!-- imagenes-->
+        <img src="imagenes/html.png" alt="código html">
+        <br>
+        <img src="imagenes/HCJ.png" alt="código html">
+        <!-- width= ancho de... ;height= alto de ... -->
+        <img src="https://lenguajecss.com/assets/logo.svg" alt="css" width="200px" height="auto">
+
+        <br>
+        <img src="data:image/png;base64,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"
+            alt="">
+
+        <br>
+        <!-- hiper vinculos-->
+        <a href="http://www.youtube.com">
+            Click para ir a ver videos
+        </a><br>
+        <a href="https://twitter.com" target="_blank"> 
+            Twitter
+        </a>
+        <br>
+        <!--hipervinculo con imagenes-->
+        <a href="https://www.tiktok.com/es" target="_blank">
+            <img src="imagenes/tiktok.png" alt="tiktok">
+        </a>
+        <br>
+        <!-- Listas OL UL-->
+        <ol>
+            <li>CSS</li>
+            <li>ÑÑÑÑ</li>
+            <li>JavaScript</li>
+        </ol>
+        <ul>
+            <li>html</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <br>
+        <!--ejemplo ul-->
+        <ul>
+            <li>html</li>
+            <li>CSS</li>
+            <ul>
+                <li>opcion 1</li>
+                <li>opcion 2</li>
+                <ul>
+                    <li>opcion 1.1</li>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.cl">google</a>
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+        <br>
+        <!-- tablas-->
+        <table>
+            <!-- encabezados-->
+            <thead>
+                <!--fila-->
+                <tr>
+                    <!--cabeceras o titulos-->
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!--elementos-->
+                    <td> 1</td>
+                    <td>Alexirehgkwerhgiowrthgowerithgoiwerugoiuwgoiwrthboirthbkwrtbhhs</td>
+                    <td>a@a.cl</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td>b@b.cl</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>

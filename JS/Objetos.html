@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto::</title>
+
+    <script>
+        var Dany = ['Daenerys', 'Targaryen', 'House Targaryen', 'Valyrian',
+            'Queen of the Andals the Rhoynar and the First Men', 'Lady Regnant of the Seven Kingdoms', 'Protector of the Realm', 22, 'Khaleesi of the Great Grass Sea', 'Breaker of Chains', 'Mother of Dragons', 'Queen of Meereen'
+        ]
+        console.log(Dany[0] + " " + Dany[1]); //'Daenerys Targaryen'
+
+        //objetos (caracteristicas o atributos)
+        //palabra: definicion o significado
+        //se cambia los [] por {}
+        var Dany = {
+            edad: 22,
+            nombre: 'Daenerys',
+            apellido: 'Targaryen',
+            titulos: ['House Targaryen', 'Valyrian',
+                'Queen of the Andals the Rhoynar and the First Men', 'Lady Regnant of the Seven Kingdoms', 'Protector of the Realm', 'Khaleesi of the Great Grass Sea', 'Breaker of Chains', 'Mother of Dragons', 'Queen of Meereen'
+            ]
+        }
+
+        //recorrer arreglo dentro de objeto
+        for (let i = 0; i < Dany.titulos.length; i++) {
+            console.log(Dany.titulos[i]);
+        }
+
+        /********/
+        var dojo = {}; // crea un objeto vacío
+        dojo = {
+                name: 'Coding Dojo', // la propiedad puede almacenar un string
+                number_of_students: 25, // la propiedad puede almacenar un número
+                instructors: ['Andrew', 'Michael', 'Jay'], // la propiedad puede almacenar arrays
+                location: { // ¡la propiedad puede incluso almacenar otro objeto!
+                    city: 'San Jose',
+                    state: 'CA',
+                    zipcode: 95112
+                }
+            } // accede a las propiedades del objeto con notación de punto (.)
+
+        //objeto con objeto y array
+        console.log(dojo.location.state) //'CA'
+
+        console.log(dojo.instructors[2]) //Jay
+            //splice(posicion, cuantos elementos a eliminar desde esa posicion)
+        console.log(dojo.instructors.splice(1, 2));
+        //elimina el primero en la posicion cero
+        console.log(dojo.instructors.shift());
+
+        /**/
+        var glazedDonuts = [{
+            frosting: 'glazed',
+            style: 'cake',
+            type: 'old fashioned',
+            age: '45',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast raised',
+            type: 'regular',
+            age: '5',
+            time: 'minutes'
+        }, {
+            frosting: 'glazed',
+            style: 'yeast raised',
+            type: 'jelly filled',
+            age: '1',
+            time: 'seconds'
+        }];
+
+        glazedDonuts.length = 3;
+
+        console.log(glazedDonuts[1].age);
+
+        //imprimir 3 type??
+        for (let i = 0; i < glazedDonuts.length; i++) {
+            console.log(glazedDonuts[i].type);
+        }
+
+
+        /*ejemplo de array y objetos*/
+        /*
+        https://services1.arcgis.com/LsoiDXzijohT7g97/arcgis/rest/services/COVID19ChileV2/FeatureServer/0/query?where=1%3D1&outFields=OBJECTID,GlobalID,IDREGION,NOMBRELARGO,NOMBRECORTO&outSR=4326&f=json
+        */
+        var covid = {
+            "objectIdFieldName": "OBJECTID",
+            "uniqueIdField": {
+                "name": "OBJECTID",
+                "isSystemMaintained": true
+            },
+            "globalIdFieldName": "GlobalID",
+            "geometryProperties": {
+                "shapeAreaFieldName": "Shape__Area",
+                "shapeLengthFieldName": "Shape__Length",
+                "units": "esriMeters"
+            },
+            "serverGens": {
+                "minServerGen": 409167,
+                "serverGen": 713203
+            },
+            "geometryType": "esriGeometryPolygon",
+            "spatialReference": {
+                "wkid": 4326,
+                "latestWkid": 4326
+            },
+            "fields": [{
+                "name": "OBJECTID",
+                "type": "esriFieldTypeOID",
+                "alias": "OBJECTID",
+                "sqlType": "sqlTypeOther",
+                "domain": null,
+                "defaultValue": null
+            }, {
+                "name": "GlobalID",
+                "type": "esriFieldTypeGlobalID",
+                "alias": "GlobalID",
+                "sqlType": "sqlTypeOther",
+                "length": 38,
+                "domain": null,
+                "defaultValue": null
+            }, {
+                "name": "IDREGION",
+                "type": "esriFieldTypeInteger",
+                "alias": "Id. Región",
+                "sqlType": "sqlTypeOther",
+                "domain": null,
+                "defaultValue": null,
+                "description": "{\"value\":\"Identificador único de Región en base a Código Único Territorial (CUT, SUBDERE)\",\"fieldValueType\":\"\"}"
+            }, {
+                "name": "NOMBRELARGO",
+                "type": "esriFieldTypeString",
+                "alias": "Nombre",
+                "sqlType": "sqlTypeOther",
+                "length": 256,
+                "domain": null,
+                "defaultValue": null,
+                "description": "{\"value\":\"Nombre de Región\",\"fieldValueType\":\"\"}"
+            }, {
+                "name": "NOMBRECORTO",
+                "type": "esriFieldTypeString",
+                "alias": "Nombre Corto",
+                "sqlType": "sqlTypeOther",
+                "length": 50,
+                "domain": null,
+                "defaultValue": null,
+                "description": "{\"value\":\"Nombre simplificado de región\",\"fieldValueType\":\"\"}"
+            }]
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

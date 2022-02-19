@@ -1,0 +1,34 @@
+#header {
+    background-color: #343A40;
+    height: 70px;
+    margin-bottom: 25px;
+    max-width: 878px;
+}
+
+#aside{
+    background-color: #45A3B8;
+    height:150px;
+    width: 14%;
+    margin-right: 25px;
+    margin-left: 134px;
+}
+
+#main {
+    background-color: #F4C10B;
+    width: 60%;
+}
+
+#Article{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+#footer{
+    background-color: #3CA745;
+    height: 70px;
+    margin-top: 25px;
+    max-width: 878px;
+
+}

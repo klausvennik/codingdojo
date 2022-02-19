@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos 4::</title>
+    <script>
+        /*ejercicio 1*/
+
+        /*Dados un array y un valor Y, 
+        cuenta e imprime (console.log()) el número de valores del array 
+        que sean mayores que Y. */
+
+        function valorMayorQueY(arreglo, y) {
+            var contador = 0; //definicion de variable
+            //siempre se usa (este for) para recorrer el arreglo desde 0 al ultimo elemento
+            for (let i = 0; i < arreglo.length; i++) {
+                if (arreglo[i] > y) { //arreglo[i], se utiliza para acceder a los elemento a traves de la posicion
+                    contador = contador + 1; //acumulando valores
+                }
+            }
+            console.log("cantidad de valores mayores que Y es: " + contador);
+        }
+        valorMayorQueY([3, 6, 9, 2, 5], 4);
+
+        /*** opcion 2***/
+        function valorMayorQueY2(arreglo, y) {
+            var array = [];
+            for (let i = 0; i < arreglo.length; i++) {
+                if (arreglo[i] > y) {
+                    array.push(arreglo[i]); //agrega al final del array
+                }
+            }
+            console.log("cantidad de valores mayores que Y es: " + array.length);
+            return array;
+        }
+        console.log(valorMayorQueY2([3, 6, 9, 2, 5], 4));
+
+        /*ejercicio 2*/
+
+        /*Dado un array, 
+        imprime los valores: máximos (max), 
+        mínimos (min) y promedio (average) 
+        para el array. */
+
+        function maxMinProm(array) { //array = [4,-3,6,-8,2,5]
+            var maximo = array[0]; //4; array[0], se utiliza para evaluar desde esa posicion
+            var minimo = array[0]; //4
+            var suma = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                //suma
+                suma = suma + array[i]; //array[i], se utiliza para acceder a los elemento a traves de la posicion
+
+                //maximo
+                //6        <  5
+                if (maximo < array[i]) { //obtener el valor mas grande
+                    maximo = array[i];
+                }
+                //minimo
+                // -8      >
+                if (minimo > array[i]) { //obtener el valor mas pequeño
+                    minimo = array[i];
+                }
+            }
+            var promedio = suma / array.length;
+            console.log("El promedio es: " + promedio);
+            console.log("El numero maximo es:" + maximo);
+            console.log("El número minimo es: " + minimo);
+        }
+
+        maxMinProm([4, -3, 6, -8, 2, 5]);
+
+        /*ejerciico 3*/
+
+        /*Dado un array de números, 
+        crea una función que dé como resultado un nuevo array 
+        donde los valores negativos se reemplacen por el texto (string) 'Dojo'.
+        Por ejemplo, reemplazarNegativos([1,2,-3,-5,5]) 
+        debiera devolver [1,2, "Dojo", "Dojo", 5].*/
+
+        function reemplazarNegativos(array) {
+            var nuevoArray = array;
+
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < 0) { //saber si es negativo
+                    nuevoArray[i] = "Dojo";
+                }
+            }
+            return nuevoArray;
+
+        }
+
+        console.log(reemplazarNegativos([1, 2, -3, -5, 5]));
+
+        /**opcion 2**/
+        function reemplazarNegativos2(array) {
+            var nuevoArray = [];
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] < 0) { //si es negativo
+                    nuevoArray.push("Dojo");
+                } else { //si NO es negativo
+                    nuevoArray.push(array[i]);
+                }
+            }
+            return nuevoArray;
+        }
+        var respuesta = reemplazarNegativos2([1, 2, -3, -5, 5]);
+
+
+        /****/
+        var x = 7;
+
+        function mifuncion(valor) {
+            valor = valor + 1;
+        }
+
+        mifuncion(x); //paso por valor
+        console.log(x);
+
+        var arr = [2, 4, 6];
+        console.log(arr);
+        arr.push(8);
+        console.log(arr);
+        arr.push(arr); //referencia circular
+        consoe.log(arr)
+
+        var y = 7;
+
+        function mifuncion(y) { //y = 7
+            y = y + 1;
+        }
+
+        mifuncion(y); //paso por valor
+        console.log(y);
+
+        //referencia, al mismo espacio de memoria
+        var z = 7;
+
+        function mifuncion() {
+            z = z + 1;
+        }
+
+        mifuncion();
+        console.log(z); //8
+
+        /*opcion 4*/
+        /*
+        Dado un array y su respectivo índice, 
+        remueve los valores en el rango del índice dado( acortando el array). 
+        Por ejemplo, removerRango([20,30,40,50,60,70],2,4)
+        debiera devolver [20,30,70].
+        */
+
+        function removerRango(array, inicio, fin) {
+            var devolverArray = [];
+
+            for (let i = 0; i < array.length; i++) {
+                //  4 < 2    o    4 > 4 
+                if (i < inicio || i > fin) { // FoF= F; ViV=V; ]2,4[
+                    devolverArray.push(array[i]);
+                }
+            }
+            return devolverArray;
+        }
+        console.log(removerRango([20, 30, 40, 50, 60, 70], 2, 4));
+
+
+        var edad = 15;
+        var sexo = "F";
+
+        if (edad < 18 && sexo == "F") { //FiV
+            console.log("jovencita menor de edad");
+        } else if (edad < 18 && sexo == "M") { //FiF
+            console.log("jovencito menor de edad");
+        } else {
+            console.log("Adulto mayor de edad");
+        }
+
+        if (edad < 18) {
+            if (sexo = "F") {
+                console.log("jovencita menor de edad");
+            } else {
+                console.log("jovencito menor de edad");
+            }
+        } else {
+            console.log("Adulto mayor de edad");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

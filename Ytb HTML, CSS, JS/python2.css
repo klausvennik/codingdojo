@@ -1,0 +1,188 @@
+#logo {
+    width: 300px;
+    padding:20px;
+}
+
+#fondo {
+    background-color: #245076;
+    width: 970px;
+    height: 600px;
+}
+
+#text-size{
+    text-align: right;
+    color: white;
+    padding:15px;
+    
+}
+
+#text-size a{
+    color: #A0960C;
+}
+#text-size span{
+    color:black;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: auto;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+ 
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#search {
+    background-color: #444444;
+    width: 450px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.example {
+   padding-top: 15px;
+ 
+}
+
+.fa-search:before{
+    display: none;
+}
+.fa fa-search{
+    display: inline-block;
+}
+
+#go{
+    margin-left: 7px;
+}
+
+#search button{
+    border-radius: 5px;
+    background-color:#245076; 
+    
+}
+
+#tx-search {
+    text-align: center;
+}
+
+#logo, #search{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#search {
+    margin-left: 150px;
+}
+
+#app, #get {
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+}
+
+hr {
+    height: 3px;
+    background-color: #73A7D5;
+}
+
+#get{
+    margin-left: 6%
+}
+
+#footer p{
+    display: inline-block;
+    color:white;
+
+}
+
+#footer {
+    background: linear-gradient(to bottom, #25537A 0%, #3373AB 100%);
+    width: 970px;
+}
+
+#diver {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#help {
+    margin-left: 25%;
+}
+
+#menu h1{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    background-color: #87FAD;
+    color:white;
+}
+
+#menu {
+    background-color:#4A7FAD;
+    width: 80%;
+    margin-left: 130px;
+    border-radius: 10px;
+    box-shadow: 1px 3px;
+
+}
+
+#amarillo {
+    color: yellow;
+}
+
+#blanco{
+    color: white;
+}
+
+#main {
+    text-align: center;
+}
+
+#main, #aside {
+    
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+}
+
+#cont {
+    margin-top: 22px;
+}
+
+#aside a{
+   color: white;
+}
+
+#aside span{
+    color: yellow;
+    font-size: 8px;
+}
+
+#aside {
+    text-align: center;
+    
+}

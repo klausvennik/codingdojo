@@ -1,0 +1,43 @@
+p {
+    text-align: center;
+    color:white;
+}
+
+.container{
+    background-color: #F4C10B;
+ width: 1000px;
+    height: 500px;
+}
+
+#aside {
+    background-color: #45A3B8;
+  height:300px;
+  width: 30%;
+}
+
+.col-sm{
+    background-color: white;
+    margin:1%;
+    height: 400px;
+    width: 300px;
+    
+}
+
+.row{
+    height:400px;
+}
+#footer{
+    margin-top: 115px;
+    height: 70px;
+}
+
+.col-md-8{
+    max-width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#titulo {
+    background-color: #45A3B8;
+   
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Básicos</title>
+
+    <script>
+        console.log("Ejercicios Básicos");
+        /* Ejercicio 1*/
+        function del1Al255() {
+            var array = [];
+            //x.length (tamaño o cantidad de elementos)
+            //x.pop() y x.push(?); x[x.length-1] (ultimo elemento del array)
+            for (var i = 1; i <= 255; i++) {
+                if (i % 2 == 0) {
+                    console.log("es par");
+                } else {
+                    break;
+                }
+                array.push(i);
+
+            }
+            return array;
+        }
+        console.log("resultado ejercicio 1: " + del1Al255());
+        /* Ejercicio 2*/
+        function paresHastaMil() {
+            var sumaTotal = 0;
+            for (var i = 1; i <= 1000; i++) {
+                if (i % 2 == 0) {
+                    // 5/2=2 (resto 1), -7/2=3 (resto -1)
+                    // 50/2=25(resto 0), -40/2= -20 (resto 0)
+                    //console.log("es par");
+                    sumaTotal = sumaTotal + i;
+                }
+            }
+            return sumaTotal;
+        }
+        console.log("resultado 2: " + paresHastaMil());
+
+        /* Ejercicio 3*/
+        function sumaImpares() {
+            var sumaImpares = 0;
+            //variable = variable + algo (acumular)
+            for (var i = inicio; i <= fin; i++) {
+                if (i % 2 != 0) { //numero impares, positivos o negativos
+                    sumaImpares = sumaImpares + i;
+                }
+            }
+            return sumaImpares;
+        }
+        var resultado3 = sumaImpares();
+        console.log("resultado 3: " + resultado3);
+
+        /*variación del ejercicio 3*/
+        function sumaImpares(inicio, fin) {
+            var array = [];
+            var sumaImpares = 0;
+            var sumaPares = 0;
+            //variable = variable + algo (acumular)
+            for (var i = inicio; i <= fin; i++) {
+                if (i % 2 != 0) { //numero impares, positivos o negativos
+                    sumaImpares = sumaImpares + i;
+                } else {
+                    sumaPares = sumaPares + i;
+                }
+            }
+            array.push(sumaImpares);
+            array.push(sumaPares);
+            return array;
+        }
+        console.log("resultado 3: " + sumaImpares(0, 1000));
+        /* ejercicio 4*/
+        function iteraUnArray(array) {
+            //array.length -> tamaño del arreglo (3)
+            //array[array.length-1] (posicion 2), [1,2,5] 
+            var sumaArray = 0;
+            //for(var i = 0;i <= array.length-1 ;i++){
+            for (var i = 0; i < array.length; i++) { //i es utilizado para la posicion
+                sumaArray = sumaArray + array[i]; //array[i] ->obtener el elemento por posicion, dentro del arreglo
+            }
+            return sumaArray;
+        }
+
+        console.log("resultado 4.1: " + iteraUnArray([1, 2, 5]));
+        console.log("resultado 4.2: " + iteraUnArray([-5, 2, 5, 12]));
+        /*ejercicio 5*/
+
+        function encuentraElMayor(array) {
+            var numeroMayor = array[0]; //se inicializa para comparar el primer elemento del array
+            for (var i = 0; i < array.length; i++) {
+                if (numeroMayor < array[i]) { //si se cumple la condicion
+                    numeroMayor = array[i]; // se reemplaza el valor 
+                }
+            }
+
+            return numeroMayor;
+        }
+        console.log(encuentraElMayor([-3, -1, -5]));
+        console.log(encuentraElMayor([-3, 3, 5, 7]));
+
+        [1, 3, 3, 5, 5, 7]
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Ejercicios Básicos</h1>
+        <ol>
+            <li><b>Obtén del 1 al 255:</b> Escribe una función que devuelve un array con todos los números del 1 al 255.</li>
+            <li><b>Consigue pares hasta 1000:</b> Escribe una función que entregue la suma de todos los números pares del 1 al 1000 - Puedes usar un operador de módulo para este ejercicio. </li>
+            <li><b>Suma impares hasta 5000:</b> Escribe una función que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).</li>
+            <li><b>Itera un array:</b> Escribe una función que devuelva la suma de todos los valores dentro de un array (ej: [1,2,5] retorna 8. [-5,2,5,12] retorna 14). </li>
+            <li><b>Encuentra el mayor (max):</b> Dado un array con múltiples valores, escribe una función que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7). </li>
+
+
+            <li>*Incrementa los Segundos - Dado un array de números arr, agrega 1 a cualquier otro elemento, específicamente a aquellos cuyo índice es impar (arr[1], arr[3], arr[5], etc). Luego, console.log cada valor del array y devuelve arr. </li>
+        </ol>
+    </div>
+</body>
+
+</html>
